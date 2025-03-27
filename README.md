@@ -1,6 +1,11 @@
 # PowerShell-Compare-Filehash
 A function to compare File-Hashes with another File or a Hash
 
+Load this function directly into your powershell:
+```
+irm https://raw.githubusercontent.com/AveGamers/PowerShell-Compare-Filehash/refs/heads/main/compare-filehash.ps1 | iex
+```
+
 ```
 function compare-filehash($File, $Hash, $Type) {
     $TypeFiles = "Files"
