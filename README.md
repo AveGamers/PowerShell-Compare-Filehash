@@ -7,5 +7,7 @@ irm https://raw.githubusercontent.com/AveGamers/PowerShell-Compare-Filehash/refs
 ```
 ## Syntax:
 Correct Syntax => compare-filehash <File> <Hash or File2> <Type: Files, Hash>
+
 Example: compare-filehash C:\temp\file1.txt C:\temp\file2.txt Files
+
 Example: compare-filehash C:\temp\file1.txt 1234567890abcdef1234567890abcdef Hash

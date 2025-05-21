@@ -26,14 +26,14 @@ function compare-filehash($File, $Hash, $Type) {
             Write-Host "####################################"
             Write-Host "#        The Hashes Match!         #"
             Write-Host "####################################"
-            Write-Host "File1     -> $File1_Hash"
-            Write-Host "Hash -> $Hash"
+            Write-Host "File1 -> $File1_Hash"
+            Write-Host "Hash  -> $Hash"
         } else {
             Write-Host "####################################"
             Write-Host "#     The Hashes DONT Match!       #"
             Write-Host "####################################"
-            Write-Host "File1     -> $File1_Hash"
-            Write-Host "Hash -> $Hash"
+            Write-Host "File1 -> $File1_Hash"
+            Write-Host "Hash  -> $Hash"
         } 
     } else {
         Write-Host "Wrong Syntax!"
