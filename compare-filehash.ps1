@@ -27,15 +27,32 @@ function compare-filehash($File, $Hash, $Type) {
             Write-Host "#        The Hashes Match!         #"
             Write-Host "####################################"
             Write-Host "File1     -> $File1_Hash"
-            Write-Host "ang. Hash -> $Hash"
+            Write-Host "Hash -> $Hash"
         } else {
             Write-Host "####################################"
             Write-Host "#     The Hashes DONT Match!       #"
             Write-Host "####################################"
             Write-Host "File1     -> $File1_Hash"
-            Write-Host "ang. Hash -> $Hash"
+            Write-Host "Hash -> $Hash"
         } 
     } else {
-        Write-Host "Wrong Syntax => compare-filehash <File> <Hash or File2> <Type: Files, Hash>"
+        Write-Host "Wrong Syntax!"
+        Write-Host "Correct Syntax => compare-filehash <File> <Hash or File2> <Type: Files, Hash>"
+        Write-Host "Example: compare-filehash C:\temp\file1.txt C:\temp\file2.txt Files"
+        Write-Host "Example: compare-filehash C:\temp\file1.txt 1234567890abcdef1234567890abcdef Hash"
     }
 }
+
+Write-Host "   _____                                            ______ _ _      _               _      "
+Write-Host "  / ____|                                          |  ____(_) |    | |             | |     "
+Write-Host " | |     ___  _ __ ___  _ __   __ _ _ __ ___ ______| |__   _| | ___| |__   __ _ ___| |__   "
+Write-Host " | |    / _ \| '_ ` _ \| '_ \ / _` | '__/ _ \______|  __| | | |/ _ \ '_ \ / _` / __| '_ \  "
+Write-Host " | |___| (_) | | | | | | |_) | (_| | | |  __/      | |    | | |  __/ | | | (_| \__ \ | | | "
+Write-Host "  \_____\___/|_| |_| |_| .__/ \__,_|_|  \___|      |_|    |_|_|\___|_| |_|\__,_|___/_| |_| "
+Write-Host "                       | |                                                                 "
+Write-Host "                       |_|                                                                 "
+Write-Host " => A PowerShell function to compare file hashes - Written by @avegamers / Jonas Techand <="
+Write-Host ""
+Write-Host "Correct Syntax => compare-filehash <File> <Hash or File2> <Type: Files, Hash>"
+Write-Host "Example: compare-filehash C:\temp\file1.txt C:\temp\file2.txt Files"
+Write-Host "Example: compare-filehash C:\temp\file1.txt 1234567890abcdef1234567890abcdef Hash"
