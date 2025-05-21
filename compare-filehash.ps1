@@ -13,9 +13,9 @@ function compare-filehash($File, $Hash, $Type) {
             Write-Host "File1 -> $File1_Hash"
             Write-Host "File2 -> $File2_Hash"
         } else {
-            Write-Host "####################################"
-            Write-Host "#     The Hashes DONT Match!       #"
-            Write-Host "####################################"
+            Write-Error "####################################"
+            Write-Error "#     The Hashes DONT Match!       #"
+            Write-Error "####################################"
             Write-Warning "File1 -> $File1_Hash"
             Write-Warning "File2 -> $File2_Hash"
         }
@@ -29,11 +29,11 @@ function compare-filehash($File, $Hash, $Type) {
             Write-Host "File1 -> $File1_Hash"
             Write-Host "Hash  -> $Hash"
         } else {
-            Write-Host "####################################"
-            Write-Host "#     The Hashes DONT Match!       #"
-            Write-Host "####################################"
-            Write-Host "File1 -> $File1_Hash"
-            Write-Host "Hash  -> $Hash"
+            Write-Error "####################################"
+            Write-Error "#     The Hashes DONT Match!       #"
+            Write-Error "####################################"
+            Write-Warning "File1 -> $File1_Hash"
+            Write-Warning "Hash  -> $Hash"
         } 
     } else {
         Write-Host "Wrong Syntax!"
