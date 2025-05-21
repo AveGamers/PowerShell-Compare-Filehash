@@ -13,9 +13,9 @@ function compare-filehash($File, $Hash, $Type) {
             Write-Host "File1 -> $File1_Hash"
             Write-Host "File2 -> $File2_Hash"
         } else {
-            Write-Error "####################################"
-            Write-Error "#     The Hashes DONT Match!       #"
-            Write-Error "####################################"
+            Write-Warning "####################################"
+            Write-Warning "#     The Hashes DONT Match!       #"
+            Write-Warning "####################################"
             Write-Warning "File1 -> $File1_Hash"
             Write-Warning "File2 -> $File2_Hash"
         }
@@ -29,14 +29,14 @@ function compare-filehash($File, $Hash, $Type) {
             Write-Host "File1 -> $File1_Hash"
             Write-Host "Hash  -> $Hash"
         } else {
-            Write-Error "####################################"
-            Write-Error "#     The Hashes DONT Match!       #"
-            Write-Error "####################################"
+            Write-Warning "####################################"
+            Write-Warning "#     The Hashes DONT Match!       #"
+            Write-Warning "####################################"
             Write-Warning "File1 -> $File1_Hash"
             Write-Warning "Hash  -> $Hash"
         } 
     } else {
-        Write-Host "Wrong Syntax!"
+        Write-Error "Wrong Syntax!"
         Write-Host "Correct Syntax => compare-filehash <File> <Hash or File2> <Type: Files, Hash>"
         Write-Host "Example: compare-filehash C:\temp\file1.txt C:\temp\file2.txt Files"
         Write-Host "Example: compare-filehash C:\temp\file1.txt 1234567890abcdef1234567890abcdef Hash"
